@@ -18,9 +18,11 @@ citybrain平台目前开放了网站和Python SDK，用户需要结合这两者�
 
 网站在登录状态下点击首页 `GO TO` 进入个人工作台页面，点击左侧边栏 `My Resources` 菜单，进入虚拟机资源管理页面
 ![Alt text](image-1.png)
-点击 `+ Resources` 按钮，在弹出的规格配置表单中填写需要的规格大小和本次资源开通的描述信息，点击 `Apply` 按钮发起申请。  
-申请通过后在该页面可以查看到资源的SSH连接信息，通过个人电脑的SSH客户端（MacOS、Linux内置，Windows系统可使用putty等工具）远程登录，即可使用该虚拟机作为后续数据下载预处理等操作的环境。
+点击 `+ Resources` 按钮，在弹出的规格配置表单中填写需要的规格大小和本次资源开通的描述信息，点击 `Apply` 按钮创建申请单
 ![Alt text](image-2.png)
+申请通过后在该页面申请单列表Result列可以查看到资源的SSH连接信息，通过个人电脑的SSH客户端（MacOS、Linux内置，Windows系统可使用putty等工具）远程登录，即可使用该虚拟机作为后续数据下载预处理等操作的环境。
+<img width="1400" alt="image" src="https://github.com/devforma/citybrain-usecase/assets/3469890/63b33b46-b7e8-4104-b0cf-3ebfbccda3ca">
+
 
 ### 安装Python SDK并获取API KEY
 
