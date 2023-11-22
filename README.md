@@ -19,7 +19,6 @@ citybrain平台目前开放了网站和Python SDK，用户需要结合这两者�
 
 ![Alt text](image-8.png)
 
-
 在准备原始数据之前，需要先确认原始数据的规模，主要是总的文件的大小。在数据量较大的场景下，个人电脑的磁盘容量往往不够，这个时候需要向citybrain申请开通具备大容量磁盘的ECS（一种Linux虚拟机，详细介绍见 [What is ECS?](https://www.alibabacloud.com/help/en/ecs/product-overview/what-is-ecs)）
 
 ### 如何申请ECS（当您的个人电脑磁盘容量够用时可忽略）
@@ -34,6 +33,7 @@ citybrain平台目前开放了网站和Python SDK，用户需要结合这两者�
 申请通过后在该页面可以查看到该ECS的SSH连接信息，通过个人电脑的SSH客户端（MacOS、Linux内置，Windows系统可使用putty等工具）远程登录，即可使用该ECS作为后续数据下载预处理等操作的环境
 ![Alt text](image-6.png)
 
+**注：登入ECS后，需要在/root目录下执行 `./datadisk-init.sh` 挂载数据盘**
 > 开通的ECS内置Miniconda环境，Python版本为3.10，已安装的Python package包括jupyter-hub、numpy、pandas、GDAL、Pillow等，citybrain-platform包也已预先安装。
 >
 > ECS所在集群位于中国境内江苏省无锡市。ECS默认保留一个月，过期自动回收
