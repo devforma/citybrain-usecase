@@ -34,7 +34,7 @@ citybrain平台目前开放了网站和Python SDK，用户需要结合这两者�
 ![Alt text](image-6.png)
 
 **注：登入ECS后，需要在/root目录下执行 `./datadisk-init.sh` 挂载数据盘**
-> 开通的ECS内置Miniconda环境，Python版本为3.10，已安装的Python package包括jupyter-hub、numpy、pandas、GDAL、Pillow等，citybrain-platform包也已预先安装。
+> 开通的ECS内置Miniconda环境，Python版本为3.10，已安装的Python package包括 jupyter-hub、numpy、pandas、GDAL、Pillow 等，citybrain-platform包也已预先安装。
 >
 > ECS所在集群位于中国境内江苏省无锡市。ECS默认保留一个月，过期自动回收
 
