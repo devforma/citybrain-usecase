@@ -107,6 +107,7 @@ print(ok)
 
 ```python
 import citybrain_platform
+from citybrain_platform.computing.data_types import ExternalFiletype
 
 store_dir = 'dir_1' # 目录
 
@@ -127,7 +128,7 @@ ok = citybrain_platform.Computing.create_table(
     columns=columns, # 列定义
     description="test table", # 表注释
     storage_filesource=store_dir, # 数据目录
-    storage_filetype=data_types.ExternalFiletype.PARQUET # 数据格式
+    storage_filetype=ExternalFiletype.PARQUET # 数据格式
 )
 print(ok)
 ```
@@ -156,7 +157,7 @@ job_status = citybrain_platform.Computing.get_job_status(
 print(job_status)
 
 # job结束后下载计算结果数据(csv格式)
-if (job_status.status == JobStatus.Terminated) {
+if (job_status.status == JobStatus.TERMINATED) {
   citybrain_platform.Computing.get_job_results(
     job_id=job_id, # 创建job函数返回的job id
     filepath="results.csv" # 结果数据保存到本地的文件路径
