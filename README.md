@@ -113,7 +113,7 @@ from citybrain_platform.computing.data_types import ExternalFiletype
 
 store_dir = 'dir_1' # 目录
 
-# 上传本地parquet文件到存储服务
+# 上传本地parquet文件到存储服务，单个文件不能超过4GB，分多个文件时需要上传到同一目录
 res = citybrain_platform.Storage.upload_file(remote_path=f"{store_dir}/data.zip", local_file="data.zip")
 print(res)
 
