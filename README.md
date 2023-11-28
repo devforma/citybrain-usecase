@@ -47,12 +47,14 @@ citybrain平台目前开放了网站和Python SDK，用户需要结合这两者�
 ```sh
 pip3 install --upgrade citybrain-platform
 ```
-使用Python包时需要首先配置前面拿到的API KEY，作为调用平台能力的用户凭证，请妥善保管。由于当前citybrain.org尚未对公众开放，该域名暂时无法访问，故需要额外设置SDK的平台API访问入口，代码如下
+使用Python包时需要首先配置前面拿到的API KEY，作为调用平台能力的用户凭证，请妥善保管。由于当前citybrain.org尚未对公众开放，该域名暂时无法访问故需要额外设置SDK的平台API访问入口，代码如下
 ```python
 import citybrain_platform
 
 citybrain_platform.api_key = "Your API KEY"
-citybrain_platform.api_baseurl = "http://221.228.10.51:18080/platform/"
+
+# 个人电脑环境请按照如下设置，如果在ECS环境中使用，请设置为 http://172.27.205.121:35002/platform/
+citybrain_platform.api_baseurl = "http://221.228.10.51:18080/platform/" 
 ```
 
 > 访问 [https://github.com/citybrain-platform/python-library](https://github.com/citybrain-platform/python-library) 查看citybrain-platform包详细使用说明
