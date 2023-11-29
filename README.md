@@ -135,7 +135,7 @@ ok = citybrain_platform.Computing.create_table(
 print(ok)
 ```
 
-创建的表默认是public权限，平台用户可以通过citybrain-platform包的 `Storage.list_tables()` 列出所有public的表，对他人创建的表只能读不能修改。
+创建的表默认是public权限，平台用户可以通过citybrain-platform包的 `Computing.list_tables()` 列出所有public和own的表，对他人创建的表只能读不能修改。
 
 ## 数据计算
 
