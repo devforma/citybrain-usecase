@@ -148,7 +148,7 @@ from citybrain_platform import JobStatus
 
 # 创建计算job
 job_id = citybrain_platform.Computing.create_job(
-  sql="select avg(col_id) from test_tblname;" # sql语句
+  sql="select avg(col_id) from test_tblname;" # sql语句，如需查看表数据示例请务必使用 select * from {table} limit {count} 语句以限制查询的记录数
 )
 print(job_id)
 
